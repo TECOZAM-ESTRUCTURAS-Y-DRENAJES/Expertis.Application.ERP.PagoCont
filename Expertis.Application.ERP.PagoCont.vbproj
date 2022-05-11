@@ -1,0 +1,612 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04AFC689-71AE-4103-9939-25D85E430FCE}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Expertis.Application.ERP.PagoCont</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Text</OptionCompare>
+    <OptionExplicit>Off</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>Solmicro.Expertis.Application.ERP.PagoCont</RootNamespace>
+    <StartupObject>Solmicro.Expertis.Application.ERP.PagoCont.%28Ninguno%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <SccAuxPath>
+    </SccAuxPath>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>http://localhost/Expertis.Application.ERP.PagoCont/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\..\Bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\..\..\..\..\..\ExpertisNet50R2test\Bin\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Expertis.Application.ERP.CommonClasses, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Application.ERP.SEPA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Business.BusinessEnum">
+      <Name>Expertis.Business.BusinessEnum</Name>
+      <HintPath>..\..\..\Bin\Expertis.Business.BusinessEnum.dll</HintPath>
+      <AssemblyFolderKey>hklm\expertis.engine</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Business.ClasesTecozam, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Expertis.Business.Financiero, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Business.General, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\ExpertisNet50R2test\Bin\Expertis.Business.General.dll</HintPath>
+    </Reference>
+    <Reference Include="Expertis.Business.Negocio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\ExpertisNet50R2test\Bin\Expertis.Business.Negocio.dll</HintPath>
+    </Reference>
+    <Reference Include="Expertis.Business.SEPA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Engine.BE.BusinessEngine">
+      <Name>Expertis.Engine.BE.BusinessEngine</Name>
+      <HintPath>..\..\..\Bin\Expertis.Engine.BE.BusinessEngine.dll</HintPath>
+      <AssemblyFolderKey>hklm\expertis.engine</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Engine.DAL, Version=5.5.0.0, Culture=neutral, PublicKeyToken=f4e70a047dadc395, processorArchitecture=MSIL" />
+    <Reference Include="Expertis.Engine.Global">
+      <Name>Expertis.Engine.Global</Name>
+      <HintPath>..\..\..\Bin\Expertis.Engine.Global.dll</HintPath>
+      <AssemblyFolderKey>hklm\expertis.engine</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Engine.UI.CommonClasses">
+      <Name>Expertis.Engine.UI.CommonClasses</Name>
+      <HintPath>..\..\..\Bin\Expertis.Engine.UI.CommonClasses.dll</HintPath>
+      <AssemblyFolderKey>hklm\expertis.engine</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Engine.UI.Resources">
+      <Name>Expertis.Engine.UI.Resources</Name>
+      <HintPath>..\..\..\Bin\Expertis.Engine.UI.Resources.dll</HintPath>
+      <AssemblyFolderKey>hklm\expertis.engine</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Expertis.Engine.UI.WinControls">
+      <Name>Expertis.Engine.UI.WinControls</Name>
+      <HintPath>..\..\..\Bin\Expertis.Engine.UI.WinControls.dll</HintPath>
+      <AssemblyFolderKey>hklm\expertis.engine</AssemblyFolderKey>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v3, Version=3.5.109.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL" />
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.0.0, Culture=neutral, PublicKeyToken=21d5517571b185bf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\ExpertisNet50R2test\Bin\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Solmicro.Expertis.Application.ERP.CommonClasses" />
+    <Import Include="Solmicro.Expertis.Application.ERP.SEPA" />
+    <Import Include="Solmicro.Expertis.Business.BusinessEnum" />
+    <Import Include="Solmicro.Expertis.Business.Financiero" />
+    <Import Include="Solmicro.Expertis.Business.SEPA" />
+    <Import Include="Solmicro.Expertis.Engine" />
+    <Import Include="Solmicro.Expertis.Engine.BE" />
+    <Import Include="Solmicro.Expertis.Engine.UI" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CIConsultaPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeneracionPagosTransferencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIGestionLeasing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIImpuestosDiferidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIPagoCont.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIPagosAgrupables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIPagosAgrupados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIPagosMasivos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIPeriodoMedioPago.Designer.vb">
+      <DependentUpon>CIPeriodoMedioPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CIPeriodoMedioPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIPeriodoVencimientos.Designer.vb">
+      <DependentUpon>CIPeriodoVencimientos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CIPeriodoVencimientos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIRemesaPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CIRiesgoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgrupaPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnoDesdeHasta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnoDesdeHastaFC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCambioSituacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCartaProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaAsientoRemesa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContabilizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContabilizarRemesa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmContadorFC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCuota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDesagrupaPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescontabilizar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescontabilizarEnviados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescontabilizarEfectos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescontPagoPer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDesglosarPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFechaPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIntroducirFechaVto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarLeasing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPagoLeasing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagoManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagoTransferenciaExcel.Designer.vb">
+      <DependentUpon>frmPagoTransferenciaExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagoTransferenciaExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagoTransferenciaExcelXML.Designer.vb">
+      <DependentUpon>frmPagoTransferenciaExcelXML.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagoTransferenciaExcelXML.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemesa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRemesaPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeleccionBanco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSinElementosAmort.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVerRemesaPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MntoEstadosPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MntoPagoPer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MntoPagoPeriodico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MntoTipoPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="PagoContGeneral.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="CIConsultaPago.resx">
+      <DependentUpon>CIConsultaPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeneracionPagosTransferencia.resx">
+      <DependentUpon>frmGeneracionPagosTransferencia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIGestionLeasing.resx">
+      <DependentUpon>CIGestionLeasing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIImpuestosDiferidos.resx">
+      <DependentUpon>CIImpuestosDiferidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIPagoCont.resx">
+      <DependentUpon>CIPagoCont.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIPagosAgrupables.resx">
+      <DependentUpon>CIPagosAgrupables.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIPagosAgrupados.resx">
+      <DependentUpon>CIPagosAgrupados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIPagosMasivos.resx">
+      <DependentUpon>CIPagosMasivos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIPeriodoMedioPago.resx">
+      <DependentUpon>CIPeriodoMedioPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIPeriodoVencimientos.resx">
+      <DependentUpon>CIPeriodoVencimientos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIRemesaPago.resx">
+      <DependentUpon>CIRemesaPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CIRiesgoProveedor.resx">
+      <DependentUpon>CIRiesgoProveedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualizacion.resx">
+      <DependentUpon>FrmActualizacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgrupaPagos.resx">
+      <DependentUpon>FrmAgrupaPagos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAno.resx">
+      <DependentUpon>FrmAno.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnoDesdeHasta.resx">
+      <DependentUpon>frmAnoDesdeHasta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnoDesdeHastaFC.resx">
+      <DependentUpon>frmAnoDesdeHastaFC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCambioSituacion.resx">
+      <DependentUpon>FrmCambioSituacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCartaProveedor.resx">
+      <DependentUpon>FrmCartaProveedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaAsientoRemesa.resx">
+      <DependentUpon>frmConsultaAsientoRemesa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContabilizar.resx">
+      <DependentUpon>frmContabilizar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContabilizarRemesa.resx">
+      <DependentUpon>frmContabilizarRemesa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmContadorFC.resx">
+      <DependentUpon>frmContadorFC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCuota.resx">
+      <DependentUpon>FrmCuota.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDesagrupaPagos.resx">
+      <DependentUpon>FrmDesagrupaPagos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescontabilizar.resx">
+      <DependentUpon>frmDescontabilizar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescontabilizarEnviados.resx">
+      <DependentUpon>frmDescontabilizarEnviados.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescontabilizarEfectos.resx">
+      <DependentUpon>frmDescontabilizarEfectos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescontPagoPer.resx">
+      <DependentUpon>frmDescontPagoPer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDesglosarPagos.resx">
+      <DependentUpon>frmDesglosarPagos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFechaPago.resx">
+      <DependentUpon>frmFechaPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIntroducirFechaVto.resx">
+      <DependentUpon>frmIntroducirFechaVto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarLeasing.resx">
+      <DependentUpon>frmModificarLeasing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifPagos.resx">
+      <DependentUpon>frmModifPagos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPagoLeasing.resx">
+      <DependentUpon>FrmPagoLeasing.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagoManual.resx">
+      <DependentUpon>frmPagoManual.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagoTransferenciaExcel.resx">
+      <DependentUpon>frmPagoTransferenciaExcel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagoTransferenciaExcelXML.resx">
+      <DependentUpon>frmPagoTransferenciaExcelXML.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemesa.resx">
+      <DependentUpon>frmRemesa.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRemesaPago.resx">
+      <DependentUpon>frmRemesaPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeleccionBanco.resx">
+      <DependentUpon>frmSeleccionBanco.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSinElementosAmort.resx">
+      <DependentUpon>frmSinElementosAmort.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVerRemesaPago.resx">
+      <DependentUpon>frmVerRemesaPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="licenses.licx" />
+    <EmbeddedResource Include="MntoEstadosPago.resx">
+      <DependentUpon>MntoEstadosPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MntoPagoPer.resx">
+      <DependentUpon>MntoPagoPer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MntoPagoPeriodico.resx">
+      <DependentUpon>MntoPagoPeriodico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MntoTipoPago.resx">
+      <DependentUpon>MntoTipoPago.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
