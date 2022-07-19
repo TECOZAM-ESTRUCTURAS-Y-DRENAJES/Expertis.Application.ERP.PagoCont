@@ -261,3 +261,4 @@ C:\DES EXP5R2\Fuentes\Expertis.Application.ERP.PagoCont\obj\Release\Expertis.App
 C:\DES EXP5R2\Fuentes\Expertis.Application.ERP.PagoCont\obj\Release\Expertis.Application.ERP.PagoCont.dll.licenses
 C:\DES EXP5R2\Fuentes\Expertis.Application.ERP.PagoCont\obj\Release\Expertis.Application.ERP.PagoCont.dll
 C:\DES EXP5R2\Fuentes\Expertis.Application.ERP.PagoCont\obj\Release\Expertis.Application.ERP.PagoCont.pdb
+C:\Users\lgonzalez\Desktop\EXPERTIS\DESARROLLO EXPERTIS\FR2Sergio\Application\Expertis.Application.ERP.PagoCont\obj\Release\Expertis.Application.ERP.PagoCont.pdb

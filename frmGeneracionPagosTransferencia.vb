@@ -1,6 +1,7 @@
 Imports Janus.Windows.GridEX
 Imports Solmicro.Expertis.Engine.DAL
 Imports Solmicro.Expertis.Business.Negocio
+Imports Solmicro.Expertis.Business.General
 
 Public Class frmGeneracionPagosTransferencia
     Inherits Solmicro.Expertis.Engine.UI.FormBase
@@ -291,23 +292,23 @@ Public Class frmGeneracionPagosTransferencia
 
         'Grid.DeleteServerChecks()
 
-        Dim banco As String
+        Dim banco As String = advBanco.Value
         Dim ruta As String = TextBox1.Text 'Donde se guarda el fichero que se genera
         Dim dtPago As DataTable = Me.activeControl.DataSource 'Tabla de los pagos que se van a realizar
         Dim dtSEPA As DataTable
-        'Dim frm As New GeneracionPagosTransferencia()- No deberia estar comentado
+        Dim frm As New GeneracionPagosTransferencia() '- No deberia estar comentado
 
-        'dtSEPA = frm.filtroSEPA(dtPago)- No deberia estar comentado
-        banco = advBanco.Value
+        dtSEPA = frm.filtroSEPA(dtPago) '- No deberia estar comentado
+        'banco= advBanco.Value
 
         'ApplicationService.GenerateError("Introduzca un banco" & banco)
-        If banco = "" Then
+        If banco.Length = 0 Then
             MessageBox.Show("Introduzca un banco")
         Else
             If ruta = Nothing Then
                 MessageBox.Show("Introduzca una ruta para guardar el fichero")
             Else
-                'frm.GenerarFicheroTransferencia(banco, ruta, dtSEPA)- No deberia estar comentado
+                frm.GenerarFicheroTransferencia(banco, ruta, dtSEPA) '- No deberia estar comentado
             End If
         End If
 

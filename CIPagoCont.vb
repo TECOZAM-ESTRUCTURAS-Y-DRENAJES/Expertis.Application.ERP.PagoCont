@@ -29,6 +29,7 @@ Public Class CIPagoCont
                 components.Dispose()
             End If
         End If
+
         MyBase.Dispose(disposing)
     End Sub
 
