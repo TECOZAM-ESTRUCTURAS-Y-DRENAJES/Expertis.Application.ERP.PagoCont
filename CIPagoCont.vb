@@ -1226,7 +1226,7 @@ Public Class CIPagoCont
         Me.AddSeparator()
         Me.FormActions.Add("Cambio de situación", AddressOf AccionCambioSituacion)
         Me.AddSeparator()
-        Me.FormActions.Add("Modificación de Pagos", AddressOf AccionModificacion)
+        Me.FormActions.Add("Modificación de Pagos", AddressOf AccionModificacionEditable)
         Me.AddSeparator()
         Me.FormActions.Add("Pago Manual", AddressOf AccionPagoManual)
         Me.FormActions.Add("Eliminar Pagos", AddressOf AccionEliminarPagos)
@@ -1776,6 +1776,23 @@ Public Class CIPagoCont
                 'Else
                 '    ExpertisApp.GenerateMessage(10964, MessageBoxButtons.OK, MessageBoxIcon.Exclamation, ExpertisApp.Title)  'Hay algún pago contabilizado
                 'End If
+            End If
+        Else
+            ExpertisApp.GenerateMessage("Debe seleccionar alguna fila.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+        End If
+    End Sub
+
+    Public Sub AccionModificacionEditable()
+        Dim blnContabilizado As Boolean = False
+        If Grid.CheckedRecordsCount > 0 Then
+            Dim dtMarcados As DataTable = Me.CheckedRecords
+            If Not dtMarcados Is Nothing AndAlso dtMarcados.Rows.Count > 0 Then
+                Dim frm As New frmModifPagos
+                mIDProcess = Grid.SaveServerChecks()
+
+                If frm.AbrirModificacionPagos(mIDProcess.ToString, Me) = DialogResult.OK Then
+                    QuitarMarcasEditable()
+                End If
             End If
         Else
             ExpertisApp.GenerateMessage("Debe seleccionar alguna fila.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -2432,6 +2449,15 @@ Public Class CIPagoCont
         Grid.DeleteServerChecks()
         Me.UnCheckAllRecords()
         Me.Execute()
+    End Sub
+    Protected Overridable Sub QuitarMarcasEditable()
+        If Me.ShowAllCheckedItems.IsChecked Then Me.ShowAllCheckedItems.InvokeOnClick()
+        Me.UnCheckAllRecords()
+        Me.DeleteServerChecks()
+        Me.Execute()
+        Me.txtTotalMarcado.Value = 0
+        If Length(mobjGuid.ToString) > 0 Then DesmarcarRegistro(mobjGuid, FilterType.Numeric)
+        If Length(mIDProcess.ToString) > 0 Then DesmarcarRegistro(mIDProcess, FilterType.Numeric)
     End Sub
 
     Protected Sub FrmActionClosed(ByVal sender As Object, ByVal e As System.EventArgs)
