@@ -89,13 +89,13 @@ Public Class frmModifPagos
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(0, 213)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(648, 104)
+        Me.Panel1.Size = New System.Drawing.Size(1226, 104)
         Me.Panel1.TabIndex = 20
         '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.Location = New System.Drawing.Point(376, 82)
+        Me.Label1.Location = New System.Drawing.Point(954, 82)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(78, 13)
         Me.Label1.TabIndex = 33
@@ -104,7 +104,7 @@ Public Class frmModifPagos
         'txtTexto
         '
         Me.txtTexto.DisabledBackColor = System.Drawing.Color.White
-        Me.txtTexto.Location = New System.Drawing.Point(536, 81)
+        Me.txtTexto.Location = New System.Drawing.Point(1114, 82)
         Me.txtTexto.Name = "txtTexto"
         Me.txtTexto.Size = New System.Drawing.Size(104, 21)
         Me.txtTexto.TabIndex = 32
@@ -112,7 +112,7 @@ Public Class frmModifPagos
         'lblFwIFPagoNew
         '
         Me.lblFwIFPagoNew.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblFwIFPagoNew.Location = New System.Drawing.Point(376, 55)
+        Me.lblFwIFPagoNew.Location = New System.Drawing.Point(954, 55)
         Me.lblFwIFPagoNew.Name = "lblFwIFPagoNew"
         Me.lblFwIFPagoNew.Size = New System.Drawing.Size(133, 13)
         Me.lblFwIFPagoNew.TabIndex = 27
@@ -121,7 +121,7 @@ Public Class frmModifPagos
         'lblFwIDBancoNew
         '
         Me.lblFwIDBancoNew.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblFwIDBancoNew.Location = New System.Drawing.Point(376, 31)
+        Me.lblFwIDBancoNew.Location = New System.Drawing.Point(954, 31)
         Me.lblFwIDBancoNew.Name = "lblFwIDBancoNew"
         Me.lblFwIDBancoNew.Size = New System.Drawing.Size(122, 13)
         Me.lblFwIDBancoNew.TabIndex = 28
@@ -130,7 +130,7 @@ Public Class frmModifPagos
         'lblFwiFechaVtoNew
         '
         Me.lblFwiFechaVtoNew.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblFwiFechaVtoNew.Location = New System.Drawing.Point(376, 7)
+        Me.lblFwiFechaVtoNew.Location = New System.Drawing.Point(954, 7)
         Me.lblFwiFechaVtoNew.Name = "lblFwiFechaVtoNew"
         Me.lblFwiFechaVtoNew.Size = New System.Drawing.Size(153, 13)
         Me.lblFwiFechaVtoNew.TabIndex = 29
@@ -157,7 +157,7 @@ Public Class frmModifPagos
         'cmdCancelar
         '
         Me.cmdCancelar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cmdCancelar.Location = New System.Drawing.Point(192, 64)
+        Me.cmdCancelar.Location = New System.Drawing.Point(770, 64)
         Me.cmdCancelar.Name = "cmdCancelar"
         Me.cmdCancelar.Size = New System.Drawing.Size(104, 27)
         Me.cmdCancelar.TabIndex = 23
@@ -166,7 +166,7 @@ Public Class frmModifPagos
         'cmdAceptar
         '
         Me.cmdAceptar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cmdAceptar.Location = New System.Drawing.Point(80, 64)
+        Me.cmdAceptar.Location = New System.Drawing.Point(658, 64)
         Me.cmdAceptar.Name = "cmdAceptar"
         Me.cmdAceptar.Size = New System.Drawing.Size(104, 27)
         Me.cmdAceptar.TabIndex = 22
@@ -177,7 +177,7 @@ Public Class frmModifPagos
         Me.FwIFPagoNew.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.FwIFPagoNew.DisabledBackColor = System.Drawing.Color.White
         Me.FwIFPagoNew.EntityName = "FormaPago"
-        Me.FwIFPagoNew.Location = New System.Drawing.Point(536, 55)
+        Me.FwIFPagoNew.Location = New System.Drawing.Point(1114, 55)
         Me.FwIFPagoNew.Name = "FwIFPagoNew"
         Me.FwIFPagoNew.SecondaryDataFields = "IDFormaPago"
         Me.FwIFPagoNew.Size = New System.Drawing.Size(104, 23)
@@ -189,7 +189,7 @@ Public Class frmModifPagos
         Me.FwIDBancoNew.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.FwIDBancoNew.DisabledBackColor = System.Drawing.Color.White
         Me.FwIDBancoNew.EntityName = "BancoPropio"
-        Me.FwIDBancoNew.Location = New System.Drawing.Point(536, 31)
+        Me.FwIDBancoNew.Location = New System.Drawing.Point(1114, 31)
         Me.FwIDBancoNew.Name = "FwIDBancoNew"
         Me.FwIDBancoNew.SecondaryDataFields = "IDBancoPropio"
         Me.FwIDBancoNew.Size = New System.Drawing.Size(104, 23)
@@ -200,7 +200,7 @@ Public Class frmModifPagos
         '
         Me.FwiFechaVtoNew.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.FwiFechaVtoNew.DisabledBackColor = System.Drawing.Color.White
-        Me.FwiFechaVtoNew.Location = New System.Drawing.Point(536, 7)
+        Me.FwiFechaVtoNew.Location = New System.Drawing.Point(1114, 7)
         Me.FwiFechaVtoNew.Name = "FwiFechaVtoNew"
         Me.FwiFechaVtoNew.Size = New System.Drawing.Size(104, 21)
         Me.FwiFechaVtoNew.TabIndex = 20
@@ -238,7 +238,7 @@ Public Class frmModifPagos
         Me.Grid.Name = "Grid"
         Me.Grid.PrimaryDataFields = Nothing
         Me.Grid.SecondaryDataFields = Nothing
-        Me.Grid.Size = New System.Drawing.Size(648, 213)
+        Me.Grid.Size = New System.Drawing.Size(1226, 213)
         Me.Grid.TabIndex = 21
         Me.Grid.Tag = "IdRec=5029:4394:4712:4713:4429:4715:4756:5071:4602:5257:4719:4711:4361:4362:5433:" & _
             "4399:4357:4725:10533:;"
@@ -248,7 +248,7 @@ Public Class frmModifPagos
         'frmModifPagos
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(6, 14)
-        Me.ClientSize = New System.Drawing.Size(648, 317)
+        Me.ClientSize = New System.Drawing.Size(1226, 317)
         Me.Controls.Add(Me.Grid)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "frmModifPagos"
